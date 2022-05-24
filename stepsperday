@@ -1,0 +1,5 @@
+stepsPerDay <- activity %>%
+        group_by(date) %>%
+        summarize(sumsteps = sum(steps, na.rm = TRUE)) 
+#Display first 10 rows of data
+head(stepsPerDay,10)
