@@ -1,0 +1,4 @@
+activityDoW <- activityNoNA
+activityDoW$date <- as.Date(activityDoW$date)
+activityDoW$day <- ifelse(weekdays(activityDoW$date) %in% c("Saturday", "Sunday"), "weekend", "weekday")
+activityDoW$day <- as.factor(activityDoW$day)
