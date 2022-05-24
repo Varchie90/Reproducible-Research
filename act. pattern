@@ -1,0 +1,7 @@
+stepsPerInterval <- activity %>%
+        group_by(interval) %>%
+        summarize(meansteps = mean(steps, na.rm = TRUE))
+
+plot(stepsPerInterval$meansteps ~ stepsPerInterval$interval,
+     col="red", type="l", xlab = "5 Minute Intervals", ylab = "Average Number of Steps",
+     main = "Steps By Time Interval")
