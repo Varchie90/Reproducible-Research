@@ -1,0 +1,2 @@
+print(paste("The total number of rows with NA is: ",sum(is.na(activity$steps))))
+## [1] "The total number of rows with NA is:  2304"
