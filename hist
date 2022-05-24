@@ -1,0 +1,2 @@
+hist(stepsPerDay$sumsteps, main = "Histogram of Daily Steps", 
+     col="lightblue", xlab="Steps", ylim = c(0,30))
