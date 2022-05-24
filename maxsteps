@@ -1,0 +1,4 @@
+print(paste("5-Minute Interval containing the most steps on average: ",stepsPerInterval$interval[which.max(stepsPerInterval$meansteps)]))
+## [1] "5-Minute Interval containing the most steps on average:  835"
+print(paste("Average steps for that interval: ",round(max(stepsPerInterval$meansteps))))
+## [1] "Average steps for that interval:  206"
